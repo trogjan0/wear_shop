@@ -94,14 +94,7 @@ span {
   font-weight: bold;
 }
 
-.button_side-bar {
-  padding: 0 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  cursor: pointer;
-}
+
 
 .ul__non-style{
   list-style: none;
@@ -137,13 +130,7 @@ li {
   width: auto;
 }
 
-.overlay {
-  opacity: 0.7;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-}
+
 
 /* Header start */
 .header {
@@ -175,9 +162,27 @@ li {
   z-index: 5;
 }
 
+.overlay {
+  opacity: 0.7;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
 .side-bar.active {
+  display: block; 
   left: 0;
   transition: left 0.5s;
+}
+
+.button_side-bar {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .close__side-bar {
@@ -349,7 +354,7 @@ li {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .footer__block{
@@ -435,7 +440,7 @@ li {
   color: #fff;
 }
 
-.list__block__content:hover ~ .button{
+.list__block__content:hover ~ a .button{
   background-color: #000;
   color: #fff;
 }
@@ -453,9 +458,9 @@ li {
   position: fixed;
   min-width: 33%;
   min-height: 25%;
-  right: 0;
+  left: 0;
   bottom: 0;
-  z-index: 8;
+  z-index: 10;
   background-color: #ff0000;
 }
 
@@ -546,3 +551,48 @@ li {
   width: 50%;
 }
 /* eror end */
+
+
+/* to top start */
+#toTop {
+	position: fixed;
+	display: inline-block;
+	bottom: 30px;
+	right: -40px;
+	width: 40px;
+	height: 40px;
+	z-index: 1000;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	background: #db494a;
+	box-shadow: 0 0 0 3px rgba(0,0,0,.2);
+	opacity: 0;
+	visibility: hidden;
+  transition: all .3s ease-in-out;
+}
+#toTop:hover {
+		background: #642828;
+}
+
+#toTop svg {
+	position: relative;
+	top: 12px;
+	right: -1px;
+	fill: #fff;
+	transition: all .3s ease-in-out;
+}
+
+#toTop:hover svg {
+	cursor: pointer;
+	fill: #fff;
+	transition: all .3s ease-in-out;
+}
+
+#toTop.show {
+	opacity: 1;
+	visibility: visible;
+	right: calc(2%);
+}
+/* to top end */

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wear shop</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <section class="ad">
@@ -16,43 +17,43 @@
     </section>
     <header class="header">
       <div class="container">
+        <div class="side-bar">
+          <button class="overlay"></button>
+          <div class="side-bar__content">
+            <button class="close__side-bar">
+              <img src="img/icons/close.svg" alt="Закрыть" />
+            </button>
+            <div class="container">
+              <ul>
+                <a href="index.html"><h1 class="margin-bottom">Главная</h1></a>
+                <li class="margin-bottom">
+                  <a href="html/wear.html"><h2>Одежда</h2></a>
+                </li>
+                <li class="margin-bottom">
+                  <a href="html/shoes.html"><h2>Обувь</h2></a>
+                </li>
+                <li class="margin-bottom">
+                  <a href="html/accessories.html"><h2>Аксессуары</h2></a>
+                </li>
+                <li class="margin-bottom">
+                  <a href="html/about_us.html"><h2>О компании</h2></a>
+                </li>
+                <li class="margin-bottom">
+                  <a href="html/contacts.html"><h2>Контакты</h2></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="header__wrapper">
           <div class="header__block">
-            <button class="button__side-bar">
+            <button id="menu" class="button__side-bar">
               <img src="img/icons/menu.svg" alt="menu" />
               <span>Меню</span>
             </button>
-            <div class="side-bar">
-              <button class="overlay"></button>
-              <div class="side-bar__content">
-                <button class="close__side-bar">
-                  <img src="img/icons/close.svg" alt="Закрыть" />
-                </button>
-                <div class="container">
-                  <ul>
-                    <a href="index.html"><h1 class="margin-bottom">Главная</h1></a>
-                    <li class="margin-bottom">
-                      <a href="html/wear.html"><h2>Одежда</h2></a>
-                    </li>
-                    <li class="margin-bottom">
-                      <a href="html/shoes.html"><h2>Обувь</h2></a>
-                    </li>
-                    <li class="margin-bottom">
-                      <a href="html/accessories.html"><h2>Аксессуары</h2></a>
-                    </li>
-                    <li class="margin-bottom">
-                      <a href="html/about_us.html"><h2>О компании</h2></a>
-                    </li>
-                    <li class="margin-bottom">
-                      <a href="html/contacts.html"><h2>Контакты</h2></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- /header__block -->
-          <div class="header__block">
+          <div id="logo" class="header__block">
             <a href="index.html" class="header__logo">
               <img
                 src="img/logo/logo header.svg"
@@ -61,7 +62,7 @@
             </a>
           </div>
           <!-- /header__block -->
-          <div class="header__block">
+          <div id="cart" class="header__block">
             <a href="html/eror.html" class="header__shop">
               <img
                 src="img/icons/cart.svg"
@@ -95,7 +96,7 @@
     <section class="shoes">
       <h2 class="shoes__title">Хиты сезона</h2>
       <div class="wrapper">
-        <div class="block">
+        <div id="shoes-1" class="block">
           <a href="html/product.html" class="shoes__item">
             <div
               class="shoes__content"
@@ -110,7 +111,7 @@
           </a>
         </div>
         <!-- /block -->
-        <div class="block">
+        <div id="shoes-2" class="block">
           <a href="html/product.html" class="shoes__item">
             <div
               class="shoes__content"
@@ -125,7 +126,7 @@
           </a>
         </div>
         <!-- /block -->
-        <div class="block">
+        <div id="shoes-3" class="block">
           <a href="html/product.html" class="shoes__item">
             <div
               class="shoes__content"
@@ -140,7 +141,7 @@
           </a>
         </div>
         <!-- /block -->
-        <div class="block">
+        <div id="shoes-4" class="block">
           <a href="html/product.html" class="shoes__item">
             <div
               class="shoes__content"
@@ -155,7 +156,7 @@
           </a>
         </div>
         <!-- /block -->
-        <div class="block">
+        <div id="shoes-5" class="block">
           <a href="html/product.html" class="shoes__item">
             <div
               class="shoes__content"
@@ -170,7 +171,7 @@
           </a>
         </div>
         <!-- /block -->
-        <div class="block">
+        <div id="shoes-6" class="block">
           <a href="html/product.html" class="shoes__item">
             <div
               class="shoes__content"
@@ -191,27 +192,27 @@
     <!-- /shoes -->
     <section class="brand">
       <div class="wrapper">
-        <a href="html/eror.html" class="width__auto block">
+        <a id="brand-1" href="html/eror.html" class="width__auto block">
           <img src="img/logo/the-north-face.svg.svg" alt="" />
         </a>
         <!-- /block -->
-        <a href="html/eror.html" class="width__auto block">
+        <a id="brand-2" href="html/eror.html" class="width__auto block">
           <img src="img/logo/buffalo.svg.svg" alt="" />
         </a>
         <!-- /block -->
-        <a href="html/eror.html" class="width__auto block">
+        <a id="brand-3" href="html/eror.html" class="width__auto block">
           <img src="img/logo/converse.svg.svg" alt="" />
         </a>
         <!-- /block -->
-        <a href="html/eror.html" class="width__auto block">
+        <a id="brand-4" href="html/eror.html" class="width__auto block">
           <img src="img/logo/crocs.svg.svg" alt="" />
         </a>
         <!-- /block -->
-        <a href="html/eror.html" class="width__auto block">
+        <a id="brand-5" href="html/eror.html" class="width__auto block">
           <img src="img/logo/dr-martens.svg.svg" alt="" />
         </a>
         <!-- /block -->
-        <a href="html/eror.html" class="width__auto block">
+        <a id="brand-6" href="html/eror.html" class="width__auto block">
           <img src="img/logo/fila.svg.svg" alt="" />
         </a>
         <!-- /block -->
@@ -221,11 +222,11 @@
     <!-- /brand -->
     <section class="wear">
       <div class="wrapper">
-        <div class="wear__big__block">
+        <div id="wear__big-1" class="wear__big__block">
           <img src="img/gif/Carhartt-gif.gif" alt="" />
         </div>
         <!-- /wear__big__block -->
-        <div class="wear__big__block">
+        <div id="wear__big-2" class="wear__big__block">
           <div class="wear__wrapper">
             <a href="html/product.html">
               <img src="img/pictures/Michigan Coat.png" alt="" />
@@ -294,29 +295,52 @@
             <h3 class="white">© 2023 NONCITIZEN</h3>
           </div>
           <div class="footer__block">
-            <h1>МАГАЗИН</h1>
-            <a href="html/wear.html"><h3 class="white">Одежда</h3></a>
-            <a href="html/shoes.html"><h3 class="white">Обувь</h3></a>
-            <a href="html/accessories.html"
-              ><h3 class="white">Аксессуары</h3></a
-            >
-          </div>
-          <div class="footer__block">
-            <h1>ИНФОРМАЦИЯ</h1>
-            <a href="html/about_us.html">
-              <h3 class="white">О компании</h3>
-            </a>
-            <a href="html/contacts.html">
-              <h3 class="white">Контакты</h3>
-            </a>
-            <a href="index.html">
-              <h3 class="white">Главная</h3>
-            </a>
+            <h3 class="white">КАРТА САЙТА</h3>
+            <ul style="padding: 0">
+              <a href="index.html"><h3 class="white">Главная</h3></a>
+              <li>
+                <a href="html/wear.html"><h3 class="white">Одежда</h3></a>
+              </li>
+              <li>
+                <a href="html/shoes.html"><h3 class="white">Обувь</h3></a>
+              </li>
+              <li>
+                <a href="html/accessories.html"
+                  ><h3 class="white">Аксессуары</h3></a
+                >
+              </li>
+              <li>
+                <a href="html/about_us.html"
+                  ><h3 class="white">О компании</h3></a
+                >
+              </li>
+              <li>
+                <a href="html/contacts.html"><h3 class="white">Контакты</h3></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
-    <!-- /hooter -->
+    <!-- /footer -->
+    <a href="#" id="toTop">
+      <svg
+        width="10pt"
+        height="10pt"
+        viewBox="0 0 630 630"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <g>
+            <path
+              d="M489.229,442.468L254.563,37.135c-3.797-6.592-14.677-6.592-18.453,0L1.443,442.468c-1.92,3.307-1.92,7.36-0.021,10.667
+        c1.92,3.307,5.44,5.333,9.259,5.333h469.333c3.819,0,7.339-2.027,9.259-5.333C491.128,449.849,491.128,445.775,489.229,442.468z"
+            />
+          </g>
+        </g>
+      </svg>
+    </a>
     <script src="js/script.js"></script>
   </body>
 </html>
