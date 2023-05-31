@@ -9,6 +9,10 @@
 }
 
 @media (max-width: 680px){
+    .list__block {
+        max-width: 40%;
+    }
+
     .container {
         max-width: 100%;
         min-width: 100%;
@@ -80,4 +84,10 @@
       .contacts__text {
         text-align: start;
       }
+}
+
+@media (max-width: 430px){
+    .list__block {
+        max-width: 100%;
+    }
 }
