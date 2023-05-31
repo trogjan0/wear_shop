@@ -1,4 +1,3 @@
-
 document.querySelector('.button__side-bar').addEventListener('click', () => {
     document.querySelector('.side-bar').classList.add('active');
     document.querySelector('.close__side-bar').classList.add('active');
@@ -73,3 +72,7 @@ button__prev.addEventListener('click', () => {
 button__next.addEventListener('click', () => {
   addActive('plus');
 });
+
+
+
+
